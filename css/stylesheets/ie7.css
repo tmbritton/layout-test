@@ -13,6 +13,10 @@
 }
 
 /* line 12, ../sass/partials/_ie7.scss */
-span.highlight {
+.main .trio ul li .rating {
+  direction: ltr;
+}
+/* line 14, ../sass/partials/_ie7.scss */
+.main .trio ul li .rating span.highlight {
   color: #e59f00!important;
 }
