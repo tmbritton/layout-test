@@ -1058,7 +1058,6 @@ header .title-wrap form .submit {
 
 /* line 1, ../sass/partials/_nav.scss */
 nav.sitetop {
-  width: 100%;
   background-color: #dddddd;
   margin-bottom: 30px;
 }
