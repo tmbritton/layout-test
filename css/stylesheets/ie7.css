@@ -14,5 +14,5 @@
 
 /* line 12, ../sass/partials/_ie7.scss */
 span.highlight {
-  color: #e59f00;
+  color: #e59f00!important;
 }
