@@ -1,4 +1,12 @@
 /* line 1, ../sass/partials/_ie7.scss */
-body {
-  background: blue;
+.sidebar .recent ul li {
+  position: relative;
+}
+/* line 3, ../sass/partials/_ie7.scss */
+.sidebar .recent ul li img {
+  float: left;
+}
+/* line 6, ../sass/partials/_ie7.scss */
+.sidebar .recent ul li p {
+  position: absolute;
 }
