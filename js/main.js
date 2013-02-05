@@ -24,11 +24,11 @@ var IE7stars = function() {
 	if($('body').hasClass('lt-ie8')) {
 		$('.rating span').mouseover(function(){
 			$(this).addClass('highlight');
-			$(this).prev().addClass('highlight');
+			$(this).prevAll().addClass('highlight');
 		});
 		$('.rating span').mouseout(function(){
 			$(this).removeClass('highlight');
-			$(this).prev().removeClass('highlight');
+			$(this).prevAll().removeClass('highlight');
 		});
 	}
 }
