@@ -3,11 +3,6 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* Colors */
-/* line 5, ../sass/partials/_mixins.scss */
-body {
-  color: #222222;
-}
-
 /* normalize.css v1.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -558,9 +553,59 @@ table {
   border-spacing: 0;
 }
 
-/* line 2, ../sass/partials/_type.scss */
-header h1 {
+/* line 1, ../sass/partials/_type.scss */
+body {
+  color: #222222;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+/* line 5, ../sass/partials/_type.scss */
+body a {
+  color: #222222;
+  text-decoration: none;
+}
+/* line 9, ../sass/partials/_type.scss */
+body a.button {
+  background: #f06c00;
+  padding: 10px 35px;
+  border-radius: 5px;
+  color: #fff;
+  font-style: italic;
+  display: inline-block;
+}
+/* line 17, ../sass/partials/_type.scss */
+body a.button:hover {
+  text-decoration: none;
+  background: #ee4c01;
+}
+/* line 22, ../sass/partials/_type.scss */
+body header h1 {
   font-size: 2.5em;
+  line-height: 1;
+}
+/* line 27, ../sass/partials/_type.scss */
+body header .sectionnav a {
+  color: #fff;
+  text-shadow: 1px 2px 3px #333333;
+}
+/* line 34, ../sass/partials/_type.scss */
+body .main p.price {
+  font-size: 1.5em;
+  font-style: italic;
+}
+/* line 39, ../sass/partials/_type.scss */
+body .main .featured p.price {
+  font-weight: bold;
+}
+/* line 44, ../sass/partials/_type.scss */
+body .main .trio .title {
+  font-weight: bold;
+  display: block;
+  height: 40px;
+}
+/* line 49, ../sass/partials/_type.scss */
+body .main .trio .price {
+  margin: 0 0 0.5em 0;
 }
 
 /*
@@ -582,24 +627,18 @@ textarea {
   color: #222;
 }
 
-/* line 21, ../sass/partials/_boilerplate_main.scss */
-body {
-  font-size: 1em;
-  line-height: 1.4;
-}
-
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection declarations have to be separate.
  * Customize the background color to match your design.
  */
-/* line 32, ../sass/partials/_boilerplate_main.scss */
+/* line 27, ../sass/partials/_boilerplate_main.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
 }
 
-/* line 37, ../sass/partials/_boilerplate_main.scss */
+/* line 32, ../sass/partials/_boilerplate_main.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -608,7 +647,7 @@ body {
 /*
  * A better looking default horizontal rule
  */
-/* line 46, ../sass/partials/_boilerplate_main.scss */
+/* line 41, ../sass/partials/_boilerplate_main.scss */
 hr {
   display: block;
   height: 1px;
@@ -621,7 +660,7 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
-/* line 59, ../sass/partials/_boilerplate_main.scss */
+/* line 54, ../sass/partials/_boilerplate_main.scss */
 img {
   vertical-align: middle;
 }
@@ -629,7 +668,7 @@ img {
 /*
  * Remove default fieldset styles.
  */
-/* line 67, ../sass/partials/_boilerplate_main.scss */
+/* line 62, ../sass/partials/_boilerplate_main.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -639,7 +678,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 77, ../sass/partials/_boilerplate_main.scss */
+/* line 72, ../sass/partials/_boilerplate_main.scss */
 textarea {
   resize: vertical;
 }
@@ -647,7 +686,7 @@ textarea {
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-/* line 85, ../sass/partials/_boilerplate_main.scss */
+/* line 80, ../sass/partials/_boilerplate_main.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -664,7 +703,7 @@ textarea {
 /*
  * Image replacement
  */
-/* line 120, ../sass/partials/_boilerplate_main.scss */
+/* line 115, ../sass/partials/_boilerplate_main.scss */
 .ir {
   background-color: transparent;
   border: 0;
@@ -673,7 +712,7 @@ textarea {
   *text-indent: -9999px;
 }
 
-/* line 128, ../sass/partials/_boilerplate_main.scss */
+/* line 123, ../sass/partials/_boilerplate_main.scss */
 .ir:before {
   content: "";
   display: block;
@@ -684,7 +723,7 @@ textarea {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-/* line 139, ../sass/partials/_boilerplate_main.scss */
+/* line 134, ../sass/partials/_boilerplate_main.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -693,7 +732,7 @@ textarea {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-/* line 148, ../sass/partials/_boilerplate_main.scss */
+/* line 143, ../sass/partials/_boilerplate_main.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -709,7 +748,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-/* line 165, ../sass/partials/_boilerplate_main.scss */
+/* line 160, ../sass/partials/_boilerplate_main.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -723,7 +762,7 @@ textarea {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-/* line 178, ../sass/partials/_boilerplate_main.scss */
+/* line 173, ../sass/partials/_boilerplate_main.scss */
 .invisible {
   visibility: hidden;
 }
@@ -739,7 +778,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 195, ../sass/partials/_boilerplate_main.scss */
+/* line 190, ../sass/partials/_boilerplate_main.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -748,7 +787,7 @@ textarea {
   /* 2 */
 }
 
-/* line 200, ../sass/partials/_boilerplate_main.scss */
+/* line 195, ../sass/partials/_boilerplate_main.scss */
 .clearfix:after {
   clear: both;
 }
@@ -757,7 +796,7 @@ textarea {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-/* line 209, ../sass/partials/_boilerplate_main.scss */
+/* line 204, ../sass/partials/_boilerplate_main.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -778,7 +817,7 @@ textarea {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 236, ../sass/partials/_boilerplate_main.scss */
+  /* line 231, ../sass/partials/_boilerplate_main.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -787,18 +826,18 @@ textarea {
     text-shadow: none !important;
   }
 
-  /* line 244, ../sass/partials/_boilerplate_main.scss */
+  /* line 239, ../sass/partials/_boilerplate_main.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
 
-  /* line 248, ../sass/partials/_boilerplate_main.scss */
+  /* line 243, ../sass/partials/_boilerplate_main.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 252, ../sass/partials/_boilerplate_main.scss */
+  /* line 247, ../sass/partials/_boilerplate_main.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -806,33 +845,33 @@ textarea {
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 262, ../sass/partials/_boilerplate_main.scss */
+  /* line 257, ../sass/partials/_boilerplate_main.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-  /* line 267, ../sass/partials/_boilerplate_main.scss */
+  /* line 262, ../sass/partials/_boilerplate_main.scss */
   pre,
   blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid;
   }
 
-  /* line 272, ../sass/partials/_boilerplate_main.scss */
+  /* line 267, ../sass/partials/_boilerplate_main.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-  /* line 277, ../sass/partials/_boilerplate_main.scss */
+  /* line 272, ../sass/partials/_boilerplate_main.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
 
-  /* line 281, ../sass/partials/_boilerplate_main.scss */
+  /* line 276, ../sass/partials/_boilerplate_main.scss */
   img {
     max-width: 100% !important;
   }
@@ -841,7 +880,7 @@ textarea {
     margin: 0.5cm;
 }
 
-  /* line 291, ../sass/partials/_boilerplate_main.scss */
+  /* line 286, ../sass/partials/_boilerplate_main.scss */
   p,
   h2,
   h3 {
@@ -849,7 +888,7 @@ textarea {
     widows: 3;
   }
 
-  /* line 297, ../sass/partials/_boilerplate_main.scss */
+  /* line 292, ../sass/partials/_boilerplate_main.scss */
   h2,
   h3 {
     page-break-after: avoid;
@@ -861,39 +900,185 @@ div.wrap {
   margin: 0 auto;
 }
 
-/* line 6, ../sass/partials/_layout.scss */
+/* line 7, ../sass/partials/_layout.scss */
+header h1 {
+  float: left;
+  margin: 0 0 1em 0;
+}
+/* line 11, ../sass/partials/_layout.scss */
+header form {
+  float: right;
+  width: 200px;
+}
+/* line 14, ../sass/partials/_layout.scss */
+header form .search {
+  border: 1px solid #222222;
+  height: 30px;
+  float: left;
+}
+/* line 19, ../sass/partials/_layout.scss */
+header form .submit {
+  background: #222222 url("../../img/search.png") center center no-repeat;
+  text-indent: -9999px;
+  float: right;
+  width: 32px;
+  height: 34px;
+  border: 0 none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* line 32, ../sass/partials/_layout.scss */
+.main {
+  width: 870px;
+  float: left;
+  margin: 0 30px 30px 0;
+}
+/* line 36, ../sass/partials/_layout.scss */
+.main h1 {
+  margin: 0 0 10px 0;
+}
+/* line 40, ../sass/partials/_layout.scss */
+.main .featured div {
+  background: #ffe8d6;
+}
+/* line 42, ../sass/partials/_layout.scss */
+.main .featured div img {
+  float: left;
+  border: 1px solid #f06c00;
+  margin: 0 30px 0 0;
+}
+/* line 50, ../sass/partials/_layout.scss */
+.main .trio ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 54, ../sass/partials/_layout.scss */
+.main .trio ul li {
+  width: 270px;
+  float: left;
+  text-align: center;
+  margin: 0 30px 0 0;
+}
+/* line 59, ../sass/partials/_layout.scss */
+.main .trio ul li img {
+  border: 1px solid #cccccc;
+}
+/* line 62, ../sass/partials/_layout.scss */
+.main .trio ul li .rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  color: #737373;
+  margin: 0 0 10px 0;
+}
+/* line 68, ../sass/partials/_layout.scss */
+.main .trio ul li .rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+/* line 74, ../sass/partials/_layout.scss */
+.main .trio ul li .rating > span:hover:before,
+.main .trio ul li .rating > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+  color: #e59f00;
+}
+/* line 80, ../sass/partials/_layout.scss */
+.main .trio ul li.third {
+  margin: 0;
+}
+
+/* line 87, ../sass/partials/_layout.scss */
+.sidebar {
+  width: 270px;
+  float: right;
+}
+/* line 90, ../sass/partials/_layout.scss */
+.sidebar h1 {
+  margin: 0 0 20px 0;
+}
+/* line 93, ../sass/partials/_layout.scss */
+.sidebar article {
+  background: #eeeeee;
+  padding: 20px;
+  margin: 0 0 30px 0;
+}
+/* line 99, ../sass/partials/_layout.scss */
+.sidebar .categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 103, ../sass/partials/_layout.scss */
+.sidebar .categories ul li {
+  background: url("../../img/arrow.png") center left no-repeat;
+  padding: 0 0 0 15px;
+  margin: 0 0 20px 0;
+}
+/* line 109, ../sass/partials/_layout.scss */
+.sidebar .categories ul li a:hover {
+  text-decoration: underline;
+}
+/* line 116, ../sass/partials/_layout.scss */
+.sidebar .recent ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 120, ../sass/partials/_layout.scss */
+.sidebar .recent ul li {
+  margin-bottom: 20px;
+  display: table;
+}
+/* line 123, ../sass/partials/_layout.scss */
+.sidebar .recent ul li p {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 126, ../sass/partials/_layout.scss */
+.sidebar .recent ul li p a:hover {
+  text-decoration: underline;
+}
+/* line 129, ../sass/partials/_layout.scss */
+.sidebar .recent ul li p .price {
+  font-weight: bold;
+}
+/* line 133, ../sass/partials/_layout.scss */
+.sidebar .recent ul li img {
+  border: 1px solid #cccccc;
+  margin: 0 15px 0 0;
+}
+
+/* line 1, ../sass/partials/_nav.scss */
 nav.sitetop {
   width: 100%;
   background-color: #dddddd;
-  margin-bottom: 3em;
+  margin-bottom: 30px;
 }
-/* line 10, ../sass/partials/_layout.scss */
+/* line 5, ../sass/partials/_nav.scss */
 nav.sitetop ul {
   width: 1170px;
   margin: 0 auto;
 }
-/* line 13, ../sass/partials/_layout.scss */
+/* line 8, ../sass/partials/_nav.scss */
 nav.sitetop ul li {
   float: left;
   text-align: center;
   padding: 15px;
 }
-/* line 18, ../sass/partials/_layout.scss */
+/* line 13, ../sass/partials/_nav.scss */
 nav.sitetop ul li:hover {
   background: #cccccc;
 }
 
-/* line 25, ../sass/partials/_layout.scss */
-header h1 {
-  float: left;
-  margin: 0 0 1em 0;
+/* line 19, ../sass/partials/_nav.scss */
+nav.sectionnav {
+  margin: 0 0 30px 0;
 }
-/* line 29, ../sass/partials/_layout.scss */
-header form {
-  float: right;
-}
-/* line 33, ../sass/partials/_layout.scss */
-header .sectionnav ul {
+/* line 21, ../sass/partials/_nav.scss */
+nav.sectionnav ul {
   margin: 0;
   padding: 0;
   background-color: #47a9cc;
@@ -905,75 +1090,50 @@ header .sectionnav ul {
   background-image: -ms-linear-gradient(bottom, #275a77 36%, #47a9cc 93%);
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.36, #275a77), color-stop(0.93, #47a9cc));
 }
-/* line 51, ../sass/partials/_layout.scss */
-header .sectionnav ul li {
+/* line 39, ../sass/partials/_nav.scss */
+nav.sectionnav ul li {
   float: left;
   padding: 15px 20px;
   border-right: 1px solid #275a77;
+  position: relative;
 }
-
-/* line 62, ../sass/partials/_layout.scss */
-.main {
-  width: 870px;
-  float: left;
-  margin: 0 30px 30px 0;
+/* line 44, ../sass/partials/_nav.scss */
+nav.sectionnav ul li ul {
+  display: none;
+  background: #fff;
+  position: absolute;
+  top: 47px;
+  left: 0px;
+  width: 200px;
+  border: 1px solid #275a77;
+  border-radius: 0;
 }
-/* line 67, ../sass/partials/_layout.scss */
-.main .featured div {
-  background: #ffe8d6;
+/* line 53, ../sass/partials/_nav.scss */
+nav.sectionnav ul li ul li {
+  float: none;
+  height: 15px;
+  padding: 10px 20px;
+  border-right: 0px;
 }
-/* line 69, ../sass/partials/_layout.scss */
-.main .featured div img {
-  float: left;
-  border: 1px solid #f06c00;
-  margin: 0 30px 0 0;
+/* line 58, ../sass/partials/_nav.scss */
+nav.sectionnav ul li ul li a {
+  color: #222222;
+  text-shadow: none;
 }
-/* line 77, ../sass/partials/_layout.scss */
-.main .trio ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+/* line 63, ../sass/partials/_nav.scss */
+nav.sectionnav ul li ul li:hover {
+  background: #f0f0f0;
 }
-/* line 81, ../sass/partials/_layout.scss */
-.main .trio ul li {
-  width: 270px;
-  float: left;
-  text-align: center;
-  margin: 0 30px 0 0;
+/* line 68, ../sass/partials/_nav.scss */
+nav.sectionnav ul li:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
-/* line 86, ../sass/partials/_layout.scss */
-.main .trio ul li img {
-  border: 1px solid #cccccc;
+/* line 72, ../sass/partials/_nav.scss */
+nav.sectionnav ul li:hover {
+  background: #275a77;
 }
-/* line 91, ../sass/partials/_layout.scss */
-.main .trio ul li.third {
-  margin: 0;
-}
-
-/* line 98, ../sass/partials/_layout.scss */
-.sidebar {
-  width: 270px;
-  float: right;
-}
-/* line 102, ../sass/partials/_layout.scss */
-.sidebar .categories ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 109, ../sass/partials/_layout.scss */
-.sidebar .recent ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 113, ../sass/partials/_layout.scss */
-.sidebar .recent ul li {
-  margin-bottom: 20px;
-}
-/* line 115, ../sass/partials/_layout.scss */
-.sidebar .recent ul li img {
-  float: left;
-  border: 1px solid #dddddd;
-  margin: 0 15px 0 0;
+/* line 74, ../sass/partials/_nav.scss */
+nav.sectionnav ul li:hover ul {
+  display: block;
 }

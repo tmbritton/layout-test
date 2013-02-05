@@ -1,5 +1,55 @@
-header {
-	h1 {
-		font-size: 2.5em;
+body {
+  color: $dark-gray;
+  font-size: 1.2em;
+  line-height: 1.4;
+  a { 
+    color: $dark-gray;
+		text-decoration:none;
+  }
+	a.button {
+		background:#f06c00;
+		padding: 10px 35px;
+		border-radius: 5px;
+		color: #fff;		
+		font-style: italic;
+		display: inline-block;
+	}
+	a.button:hover {
+		text-decoration:none;
+		background: #ee4c01;
+	}
+	header {
+		h1 {
+			font-size: 2.5em;
+			line-height: 1;
+			}
+		.sectionnav {
+      a { 
+        color:#fff;
+      	text-shadow: 1px 2px 3px #333;
+			}   
+    }  
+	}	
+	.main {
+		p.price {
+			font-size: 1.5em;
+			font-style: italic;
+		}
+		.featured {
+			p.price {
+				font-weight:bold;
+			}
+		}
+		.trio {
+			.title {
+				font-weight:bold;
+				display:block;
+				height: 40px;	
+			}
+			.price {
+				margin: 0 0 .5em 0;
+			}
+		}
 	}
 }
+
