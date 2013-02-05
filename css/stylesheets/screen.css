@@ -901,24 +901,28 @@ div.wrap {
 }
 
 /* line 7, ../sass/partials/_layout.scss */
-header h1 {
+header .title-wrap {
+  height: 34px;
+}
+/* line 9, ../sass/partials/_layout.scss */
+header .title-wrap h1 {
   margin: 0;
 }
-/* line 10, ../sass/partials/_layout.scss */
-header form {
+/* line 12, ../sass/partials/_layout.scss */
+header .title-wrap form {
   float: right;
   position: relative;
   top: -34px;
   width: 200px;
 }
-/* line 15, ../sass/partials/_layout.scss */
-header form .search {
+/* line 17, ../sass/partials/_layout.scss */
+header .title-wrap form .search {
   border: 1px solid #222222;
   height: 30px;
   float: left;
 }
-/* line 20, ../sass/partials/_layout.scss */
-header form .submit {
+/* line 22, ../sass/partials/_layout.scss */
+header .title-wrap form .submit {
   background: #222222 url("../../img/search.png") center center no-repeat;
   text-indent: -9999px;
   float: right;
@@ -929,124 +933,124 @@ header form .submit {
   border-bottom-right-radius: 5px;
 }
 
-/* line 33, ../sass/partials/_layout.scss */
+/* line 36, ../sass/partials/_layout.scss */
 .main {
   width: 870px;
   float: left;
   margin: 0 30px 30px 0;
 }
-/* line 37, ../sass/partials/_layout.scss */
+/* line 40, ../sass/partials/_layout.scss */
 .main h1 {
   margin: 0 0 10px 0;
 }
-/* line 41, ../sass/partials/_layout.scss */
+/* line 44, ../sass/partials/_layout.scss */
 .main .featured div {
   background: #ffe8d6;
 }
-/* line 43, ../sass/partials/_layout.scss */
+/* line 46, ../sass/partials/_layout.scss */
 .main .featured div img {
   float: left;
   border: 1px solid #f06c00;
   margin: 0 30px 0 0;
 }
-/* line 51, ../sass/partials/_layout.scss */
+/* line 54, ../sass/partials/_layout.scss */
 .main .trio ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 55, ../sass/partials/_layout.scss */
+/* line 58, ../sass/partials/_layout.scss */
 .main .trio ul li {
   width: 270px;
   float: left;
   text-align: center;
   margin: 0 30px 0 0;
 }
-/* line 60, ../sass/partials/_layout.scss */
+/* line 63, ../sass/partials/_layout.scss */
 .main .trio ul li img {
   border: 1px solid #cccccc;
 }
-/* line 63, ../sass/partials/_layout.scss */
+/* line 66, ../sass/partials/_layout.scss */
 .main .trio ul li .rating {
   unicode-bidi: bidi-override;
   direction: rtl;
   color: #737373;
   margin: 0 0 10px 0;
 }
-/* line 69, ../sass/partials/_layout.scss */
+/* line 72, ../sass/partials/_layout.scss */
 .main .trio ul li .rating > span {
   display: inline-block;
   position: relative;
   width: 1.1em;
 }
-/* line 75, ../sass/partials/_layout.scss */
+/* line 78, ../sass/partials/_layout.scss */
 .main .trio ul li .rating > span:hover:before,
 .main .trio ul li .rating > span:hover ~ span:before {
   content: "\2605";
   position: absolute;
   color: #e59f00;
 }
-/* line 81, ../sass/partials/_layout.scss */
+/* line 84, ../sass/partials/_layout.scss */
 .main .trio ul li.third {
   margin: 0;
 }
 
-/* line 88, ../sass/partials/_layout.scss */
+/* line 91, ../sass/partials/_layout.scss */
 .sidebar {
   width: 270px;
   float: right;
 }
-/* line 91, ../sass/partials/_layout.scss */
+/* line 94, ../sass/partials/_layout.scss */
 .sidebar h1 {
   margin: 0 0 20px 0;
 }
-/* line 94, ../sass/partials/_layout.scss */
+/* line 97, ../sass/partials/_layout.scss */
 .sidebar article {
   background: #eeeeee;
   padding: 20px;
   margin: 0 0 30px 0;
 }
-/* line 100, ../sass/partials/_layout.scss */
+/* line 103, ../sass/partials/_layout.scss */
 .sidebar .categories ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 104, ../sass/partials/_layout.scss */
+/* line 107, ../sass/partials/_layout.scss */
 .sidebar .categories ul li {
   background: url("../../img/arrow.png") center left no-repeat;
   padding: 0 0 0 15px;
   margin: 0 0 20px 0;
 }
-/* line 110, ../sass/partials/_layout.scss */
+/* line 113, ../sass/partials/_layout.scss */
 .sidebar .categories ul li a:hover {
   text-decoration: underline;
 }
-/* line 117, ../sass/partials/_layout.scss */
+/* line 120, ../sass/partials/_layout.scss */
 .sidebar .recent ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 121, ../sass/partials/_layout.scss */
+/* line 124, ../sass/partials/_layout.scss */
 .sidebar .recent ul li {
   margin-bottom: 20px;
   display: table;
 }
-/* line 124, ../sass/partials/_layout.scss */
+/* line 127, ../sass/partials/_layout.scss */
 .sidebar .recent ul li p {
   display: table-cell;
   vertical-align: middle;
 }
-/* line 127, ../sass/partials/_layout.scss */
+/* line 130, ../sass/partials/_layout.scss */
 .sidebar .recent ul li p a:hover {
   text-decoration: underline;
 }
-/* line 130, ../sass/partials/_layout.scss */
+/* line 133, ../sass/partials/_layout.scss */
 .sidebar .recent ul li p .price {
   font-weight: bold;
 }
-/* line 134, ../sass/partials/_layout.scss */
+/* line 137, ../sass/partials/_layout.scss */
 .sidebar .recent ul li img {
   border: 1px solid #cccccc;
   margin: 0 15px 0 0;
