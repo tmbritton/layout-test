@@ -10,13 +10,19 @@ header {
 			margin: 0;
 		}
 		form {
-			float:right;
-			position:relative;
-			top: -34px;
-			width:185px;
+			border-bottom: 1px solid #222222;
+    	border-bottom-right-radius: 5px;
+    	border-left: 1px solid #222222;
+    	border-top: 1px solid #222222;
+    	border-top-right-radius: 5px;
+    	float: right;
+    	position: relative;
+    	top: -34px;
+    	width: 185px;
 			.search {
-				border: 1px solid $dark-gray;
+				border:0;
 				height:30px;
+				width:149px;
 				float:left;
 			}
 			.submit {
