@@ -5,11 +5,12 @@ div.wrap {
 
 header {
 	h1 {
-		float:left;
 		margin: 0;
 	}
 	form {
 		float:right;
+		position:relative;
+		top: -34px;
 		width:200px;
 		.search {
 			border: 1px solid $dark-gray;
