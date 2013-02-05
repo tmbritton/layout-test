@@ -1061,27 +1061,27 @@ nav.sitetop {
   background-color: #dddddd;
   margin-bottom: 30px;
 }
-/* line 5, ../sass/partials/_nav.scss */
+/* line 4, ../sass/partials/_nav.scss */
 nav.sitetop ul {
   width: 1170px;
   margin: 0 auto;
 }
-/* line 8, ../sass/partials/_nav.scss */
+/* line 7, ../sass/partials/_nav.scss */
 nav.sitetop ul li {
   float: left;
   text-align: center;
   padding: 15px;
 }
-/* line 13, ../sass/partials/_nav.scss */
+/* line 12, ../sass/partials/_nav.scss */
 nav.sitetop ul li:hover {
   background: #cccccc;
 }
 
-/* line 19, ../sass/partials/_nav.scss */
+/* line 18, ../sass/partials/_nav.scss */
 nav.sectionnav {
   margin: 0 0 30px 0;
 }
-/* line 21, ../sass/partials/_nav.scss */
+/* line 20, ../sass/partials/_nav.scss */
 nav.sectionnav ul {
   margin: 0;
   padding: 0;
@@ -1094,14 +1094,14 @@ nav.sectionnav ul {
   background-image: -ms-linear-gradient(bottom, #275a77 36%, #47a9cc 93%);
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.36, #275a77), color-stop(0.93, #47a9cc));
 }
-/* line 39, ../sass/partials/_nav.scss */
+/* line 38, ../sass/partials/_nav.scss */
 nav.sectionnav ul li {
   float: left;
   padding: 15px 20px;
   border-right: 1px solid #275a77;
   position: relative;
 }
-/* line 44, ../sass/partials/_nav.scss */
+/* line 43, ../sass/partials/_nav.scss */
 nav.sectionnav ul li ul {
   display: none;
   background: #fff;
@@ -1112,32 +1112,32 @@ nav.sectionnav ul li ul {
   border: 1px solid #275a77;
   border-radius: 0;
 }
-/* line 53, ../sass/partials/_nav.scss */
+/* line 52, ../sass/partials/_nav.scss */
 nav.sectionnav ul li ul li {
   float: none;
   height: 15px;
   padding: 10px 20px;
   border-right: 0px;
 }
-/* line 58, ../sass/partials/_nav.scss */
+/* line 57, ../sass/partials/_nav.scss */
 nav.sectionnav ul li ul li a {
   color: #222222;
   text-shadow: none;
 }
-/* line 63, ../sass/partials/_nav.scss */
+/* line 62, ../sass/partials/_nav.scss */
 nav.sectionnav ul li ul li:hover {
   background: #f0f0f0;
 }
-/* line 68, ../sass/partials/_nav.scss */
+/* line 67, ../sass/partials/_nav.scss */
 nav.sectionnav ul li:first-child {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-/* line 72, ../sass/partials/_nav.scss */
+/* line 71, ../sass/partials/_nav.scss */
 nav.sectionnav ul li:hover {
   background: #275a77;
 }
-/* line 74, ../sass/partials/_nav.scss */
+/* line 73, ../sass/partials/_nav.scss */
 nav.sectionnav ul li:hover ul {
   display: block;
 }

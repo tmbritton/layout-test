@@ -1,21 +1,15 @@
 $(document).ready(function(){
-	$('.rating span').click(function(){
-		setRating($(this));
-		//displayRatings();
-	});
+	resizeMaxWidth('.sitetop'); 	
 });
 
-var setRating = function(star) {
-	var rating = star.attr('class');
-	$(star).parent('.rating').removeClass('one two three four five');
-	$(star).parent('.rating').addClass(rating);
-}
-
-var displayRatings = function() {
-	$('.rating').each(function(){
-		if($(this).hasClass('one two three four five')){
-			console.log($(this).attr('class'));
-		}
-	});
-
+/**
+* Function resizes elements that are supposed to be 100% of window to
+* window width + scroll width
+*
+* @param string selector
+*		selector to resize
+*/
+var resizeMaxWidth = function(selector) {
+	var realwidth = window.innerWidth + document.defaultView.scrollMaxX;
+	$(selector).css('width', realwidth);
 }
