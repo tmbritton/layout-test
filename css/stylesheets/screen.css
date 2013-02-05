@@ -928,7 +928,7 @@ header .title-wrap form .search {
   float: left;
 }
 /* line 28, ../sass/partials/_layout.scss */
-header .title-wrap form .submit {
+header .title-wrap form input[type='submit'] {
   background: #222222 url("../../img/search.png") center center no-repeat;
   text-indent: -9999px;
   float: right;

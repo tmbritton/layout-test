@@ -9,4 +9,5 @@
 /* line 6, ../sass/partials/_ie7.scss */
 .sidebar .recent ul li p {
   position: absolute;
+  width: 200px;
 }
