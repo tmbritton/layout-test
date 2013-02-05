@@ -11,3 +11,8 @@
   position: absolute;
   width: 200px;
 }
+
+/* line 12, ../sass/partials/_ie7.scss */
+span.highlight {
+  color: #e59f00;
+}
