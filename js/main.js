@@ -22,13 +22,13 @@ var resizeMaxWidth = function(selector) {
 */
 var IE7stars = function() {
 	if($('body').hasClass('lt-ie8')) {
-		$('.rating .span').mouseover(function(){
+		$('.rating span').mouseover(function(){
 			$(this).addClass('highlight');
 			$(this).prev().addClass('highlight');
 		});
-		$('.rating .span').mouseout(function(){
+		$('.rating span').mouseout(function(){
 			$(this).removeClass('highlight');
 			$(this).prev().removeClass('highlight');
-		}
+		});
 	}
 }
