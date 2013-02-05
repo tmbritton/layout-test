@@ -21,7 +21,7 @@ var resizeMaxWidth = function(selector) {
 *	Function adds star highlighting behavior for IE7.
 */
 var IE7stars = function() {
-	if($('body').hasClass('lt-ie8')) {
+	if($('html').hasClass('lt-ie8')) {
 		$('.rating span').mouseover(function(){
 			$(this).addClass('highlight');
 			$(this).prevAll().addClass('highlight');
